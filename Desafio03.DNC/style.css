@@ -1,0 +1,253 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    
+}
+
+#title-list{
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
+    color: #11175E;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.input{
+    width: 18rem;
+    height: 1rem;
+    border: 0.1rem solid #EEEEEE;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    color:#B1BACB;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+
+}
+
+
+#button-add{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: #2D70FD;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  
+}
+
+#button-add:hover {
+    background-color: #5a8eff;
+        
+}
+
+
+.div-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.left-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.right-content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.meta-row{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+
+
+
+.button-checked{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 8rem;
+    height: 2.4rem;
+    background-color: #2D70FD;
+    color: #FFFFFF;
+    border: 0.1rem solid;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+
+}
+
+.button-checked:hover {
+    background-color: #5a8eff;
+        
+    }
+
+#todo-list{
+  margin: 0.8rem 0 1.6rem;
+  min-height: 5rem;
+
+ 
+}
+
+#todo-list > li {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width:36rem;
+    height: 6rem;
+    border: 0.1rem solid #EEEEEE;
+    border-radius: 0.5rem;
+    list-style: none;
+    margin-bottom: 0.5rem;
+    padding: 1.5rem 2rem;
+
+
+}
+
+.etiqueta {
+    border: 0.1rem solid #B1BACB;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #B1BACB;
+    padding: 0.1rem 0.5rem;
+    margin: 0;
+}
+
+
+.task-date {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #B1BACB;
+    padding: 0.1rem 0.5rem;
+
+}
+
+.tarefa-concluida{
+    opacity: 0.6;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15rem;
+}
+
+p{
+    display: flex;
+    flex-direction: row-reverse;
+    color: #B1BACB;
+    font-weight: 400;
+
+}
+
+p > span {
+    margin-right: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+
+    main{
+        padding: 1rem;
+    }
+   
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       
+    
+    }
+
+    .input{
+        width: 90%;
+        margin: 0.5rem 0;
+    }
+
+    #title-list{
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #button-add{
+        display: block;
+        margin: 0.5rem 0;
+        width: 90%;
+        height: 2.8rem;
+    }
+
+   .div-container{
+        display: block;
+    }
+
+
+    #todo-list > li{
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem; 
+        padding: 1rem;
+
+    }
+
+    .button-checked{
+        width: 60%;
+        margin: 0.5rem auto;
+    }
+
+    .task-date{
+        display: flex;
+        flex-direction: column;
+    }
+
+    p{
+        justify-content: center;
+    }
+
+    .meta-row{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-content{
+        display: flex;
+        justify-content: center;
+
+
+    }
+}
+

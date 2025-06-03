@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Tarefas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <main>
+        
+        <div class="todo-list-div">
+            <h2 id="title-list">Board de Tarefas</h2>
+            <section>
+                <form id="create-todo-form">
+                    <input 
+                    type="text" 
+                    placeholder="Nome da tarefa" 
+                    aria-label="Nome da tarefa" 
+                    class="input" 
+                    name="description1"
+                    id="description1"
+                    >
+
+                    <input 
+                    type="text" 
+                    placeholder="Etiqueta"  
+                    aria-label= "Etiqueta" 
+                    class="input" 
+                    name="description2"
+                    id="description2"
+                    >
+                    
+                    <button type="submit" aria-label="Cadastrar tarefa e etiqueta" id="button-add" > + </button>
+                </form>
+               
+            </section>
+            
+
+            <ul id="todo-list"></ul>
+            
+        
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>Tarefa Concluida(s)<span id="contador-concluida">0</span></p>
+    </footer>
+   
+</body>
+
+</html>
